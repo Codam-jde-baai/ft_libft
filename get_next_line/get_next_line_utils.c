@@ -15,7 +15,6 @@
 
 #include <libft.h>
 
-
 /* string length */
 int	getnl_strlen(const char *s)
 {
