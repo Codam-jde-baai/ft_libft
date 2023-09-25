@@ -6,11 +6,11 @@
 /*   By: jde-baai <jde-baai@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/10 18:04:38 by jde-baai      #+#    #+#                 */
-/*   Updated: 2022/11/21 16:57:36 by jde-baai      ########   odam.nl         */
+/*   Updated: 2023/09/25 19:49:54 by juliusdebaa   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include <libft.h>
 
 static void	ft_hexu_write(unsigned int nb);
 static int	ft_hex_cnt(unsigned int ptrn);

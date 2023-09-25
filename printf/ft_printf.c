@@ -6,11 +6,11 @@
 /*   By: jde-baai <jde-baai@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/07 11:03:46 by jde-baai      #+#    #+#                 */
-/*   Updated: 2023/07/29 13:59:43 by juliusdebaa   ########   odam.nl         */
+/*   Updated: 2023/09/25 19:49:39 by juliusdebaa   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include <libft.h>
 
 static int	conversion(va_list args, const char format);
 

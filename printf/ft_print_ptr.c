@@ -6,11 +6,11 @@
 /*   By: jde-baai <jde-baai@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/07 17:47:28 by jde-baai      #+#    #+#                 */
-/*   Updated: 2022/11/21 16:58:35 by jde-baai      ########   odam.nl         */
+/*   Updated: 2023/09/25 19:49:49 by juliusdebaa   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include <libft.h>
 
 static void	ft_ptr_write(unsigned long ptrn);
 static int	ft_ptr_cnt(unsigned long ptrn);

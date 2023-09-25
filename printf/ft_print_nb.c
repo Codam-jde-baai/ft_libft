@@ -6,13 +6,13 @@
 /*   By: jde-baai <jde-baai@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/10 17:33:20 by jde-baai      #+#    #+#                 */
-/*   Updated: 2023/07/29 13:54:43 by juliusdebaa   ########   odam.nl         */
+/*   Updated: 2023/09/25 19:57:32 by juliusdebaa   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include <libft.h>
 
-static char	*ft_itoa(int n);
+static char	*ft_pitoa(int n);
 static int	nb_len(long int nb);
 static void	ft_rec(long int nb, char *ptr);
 
@@ -21,7 +21,7 @@ int	ft_print_nb(int nb)
 	int		output;
 	char	*str;
 
-	str = ft_itoa(nb);
+	str = ft_pitoa(nb);
 	output = ft_print_putstr(str);
 	free(str);
 	return (output);
@@ -33,7 +33,7 @@ int	ft_print_nb(int nb)
  * @return	The string representation of the integer
  * 			NULL if the allocation fails
  */
-static char	*ft_itoa(int n)
+static char	*ft_pitoa(int n)
 {
 	int			neg;
 	long int	nb;
