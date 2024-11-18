@@ -12,7 +12,7 @@ SRC_MEMORY = ./memory/ft_bzero.c ./memory/ft_calloc.c ./memory/ft_memchr.c ./mem
 SRC_PUT = ./write/ft_putchar_fd.c ./write/ft_putstr_fd.c ./write/ft_putendl_fd.c ./write/ft_putnbr_fd.c
 SRC_STRING = ./string/ft_strchr.c ./string/ft_strdup.c ./string/ft_strlcat.c ./string/ft_strlcpy.c ./string/ft_strlen.c ./string/ft_strncmp.c ./string/ft_strnstr.c ./string/ft_strrchr.c ./string/ft_substr.c ./string/ft_strjoin.c ./string/ft_strtrim.c ./string/ft_strmapi.c ./string/ft_striteri.c
 SRC_GET_NEXT_LINE = ./get_next_line/get_next_line.c ./get_next_line/get_next_line_utils.c
-SRC_VECTOR = ./vector/ft_vec_add.c ./vector/ft_vec_count.c ./vector/ft_vec_free.c ./vector/ft_vec_insert.c ./vector/ft_vec_replace.c ./vector/ft_vec_apply.c ./vector/ft_vec_find.c ./vector/ft_vec_init.c ./vector/ft_vec_remove.c ./vector/ft_vec_resize.c
+SRC_VECTOR = ./vector/ft_vec_add.c ./vector/ft_vec_count.c ./vector/ft_vec_free.c ./vector/ft_vec_insert.c ./vector/ft_vec_replace.c ./vector/ft_vec_apply.c ./vector/ft_vec_find.c ./vector/ft_vec_init.c ./vector/ft_vec_remove.c ./vector/ft_vec_resize.c ./vector/ft_vec_add_char.c
 SRC_EXTRA = ./extra/ft_realloc.c ./extra/ft_dup_array.c ./extra/ft_free_array.c
 
 SRC += $(SRC_CHARACTER) $(SRC_GENERAL) $(SRC_LIST) $(SRC_MEMORY) $(SRC_PUT) $(SRC_STRING) $(SRC_GET_NEXT_LINE) $(SRC_VECTOR) $(SRC_EXTRA) 
