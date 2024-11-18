@@ -6,12 +6,17 @@
 /*   By: jde-baai <jde-baai@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/01 14:28:41 by jde-baai      #+#    #+#                 */
-/*   Updated: 2023/07/28 20:14:31 by juliusdebaa   ########   odam.nl         */
+/*   Updated: 2024/11/18 10:12:01 by jde-baai      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/**
+ * @brief	Deletes and frees the given element
+ * @param	lst	Pointer to the element to be deleted
+ * @param	del	Function to delete the content of the element
+ */
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (lst == NULL)

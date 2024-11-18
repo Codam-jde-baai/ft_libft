@@ -6,15 +6,14 @@
 /*   By: juliusdebaaij <juliusdebaaij@student.co      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/07/28 17:42:02 by juliusdebaa   #+#    #+#                 */
-/*   Updated: 2023/09/25 20:03:29 by juliusdebaa   ########   odam.nl         */
+/*   Updated: 2023/07/28 21:05:06 by juliusdebaa   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
 /**
- * @brief	Counts the number of elements in the 
- * 			vector that match the count function
+ * @brief	Counts the number of elements in the vector that match the count function
  * @param	vec		Vector to count elements in
  * @param	count	Function to count elements with
  * @return	Number of elements that match the count function

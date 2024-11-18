@@ -6,7 +6,7 @@
 /*   By: jde-baai <jde-baai@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/07/26 13:57:46 by jde-baai      #+#    #+#                 */
-/*   Updated: 2023/09/25 20:03:43 by juliusdebaa   ########   odam.nl         */
+/*   Updated: 2023/07/28 21:05:02 by juliusdebaa   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param data the data to add
  * @return false on malloc failure, true on success
 */
-bool	ft_vec_add(t_vector *vec, void *data)
+bool		ft_vec_add(t_vector *vec, void *data)
 {
 	if (vec->size == vec->capacity)
 	{

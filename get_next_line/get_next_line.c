@@ -6,11 +6,15 @@
 /*   By: jde-baai <jde-baai@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/03 14:41:58 by jde-baai      #+#    #+#                 */
-/*   Updated: 2023/07/28 22:08:40 by juliusdebaa   ########   odam.nl         */
+/*   Updated: 2024/11/18 10:14:34 by jde-baai      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+#ifndef OPEN_MAX
+# define OPEN_MAX 1024
+#endif
 
 static char	*first_read(int fd);
 static char	*getnl_loop(int fd, char *save, int readout);

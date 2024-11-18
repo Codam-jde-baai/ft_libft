@@ -6,12 +6,20 @@
 /*   By: jde-baai <jde-baai@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/01 15:51:11 by jde-baai      #+#    #+#                 */
-/*   Updated: 2023/07/28 20:14:31 by juliusdebaa   ########   odam.nl         */
+/*   Updated: 2024/11/18 10:10:48 by jde-baai      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
+/**
+ * @brief	Iterates a list and applies a function to each element's content
+ * 			to create a new list
+ * @param	lst		Pointer to the first element of the list
+ * @param	f		Function to apply to each element's content
+ * @param	del	Function to delete the content of an element if needed
+ * @return	Pointer to the new list, or NULL if allocation fails
+ */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*node;

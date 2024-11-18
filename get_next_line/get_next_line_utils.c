@@ -2,11 +2,11 @@
 /*                                                                            */
 /*                                                        ::::::::            */
 /*   get_next_line_utils.c                              :+:    :+:            */
-/*
+/*                                                    
 	+:+                    */
-/*   By: jde-baai <jde-baai@student.codam.nl>
+/*   By: jde-baai <jde-baai@student.codam.nl>        
 	+#+                     */
-/*
+/*                                                  
 	+#+                      */
 /*   Created: 2022/12/13 12:46:46 by jde-baai      #+#    #+#                 */
 /*   Updated: 2022/12/24 16:26:42 by juliusdebaa   ########   odam.nl         */
@@ -15,9 +15,11 @@
 
 #include <libft.h>
 
+
+/* string length */
 int	getnl_strlen(const char *s)
 {
-	unsigned int	i;
+	unsigned int i;
 
 	if (s == NULL)
 		return (0);
@@ -27,10 +29,11 @@ int	getnl_strlen(const char *s)
 	return (i);
 }
 
+/* string duplicate */
 char	*getnl_strdup(const char *s1)
 {
-	int		i;
-	char	*ptr;
+	int i;
+	char *ptr;
 
 	i = 0;
 	while (s1[i] != '\0')
@@ -48,10 +51,11 @@ char	*getnl_strdup(const char *s1)
 	return (ptr);
 }
 
+/*copies string for len length and frees ptr */
 char	*getnl_copy(char *input, int len, char **ptr)
 {
-	char	*output;
-	int		i;
+	char *output;
+	int i;
 
 	if (len == 0 && input == NULL)
 		return (NULL);
@@ -76,12 +80,13 @@ char	*getnl_copy(char *input, int len, char **ptr)
 	return (output);
 }
 
+/* appends str2 to str1 and frees ptr */
 char	*getnl_join(char *str1, char *str2, char **ptr)
 {
-	int		len1;
-	int		len2;
-	char	*output;
-	int		i;
+	int len1;
+	int len2;
+	char *output;
+	int i;
 
 	len1 = getnl_strlen(str1);
 	len2 = getnl_strlen(str2);
@@ -105,6 +110,7 @@ char	*getnl_join(char *str1, char *str2, char **ptr)
 	return (output);
 }
 
+/* frees ptr and returns NULL */
 char	*free_return(char **ptr)
 {
 	if (*ptr)
